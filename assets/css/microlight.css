@@ -298,6 +298,47 @@
     font-weight: var(--font-weight-regular);
 }
 
+/* ===== Card border color */
+.card.border-primary {
+    border: 1px solid var(--primary-500);
+}
+
+.card.border-secondary {
+    border: 1px solid var(--secondary-500);
+}
+
+.card.border-success {
+    border: 1px solid var(--success-500);
+}
+
+.card.border-danger {
+    border: 1px solid var(--danger-500);
+}
+
+.card.border-warning {
+    border: 1px solid var(--warning-500);
+}
+
+.card.border-info {
+    border: 1px solid var(--info-500);
+}
+
+.card.border-dark {
+    border: 1px solid var(--secondary-500);
+}
+
+.card-header {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.card-footer {
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
 .card .range {
     font-size: var(--text-medium-font-size);
     font-weight: var(--font-weight-regular);
@@ -923,6 +964,15 @@ input[type="range"]:hover {
 
 .text-info-900 {
     color: var(--info-900) !important;
+}
+
+/* Text light & dark */
+.text-dark {
+    color: var(--secondary-700) !important;
+}
+
+.text-light {
+    color: var(--secondary-400) !important;
 }
 
 
