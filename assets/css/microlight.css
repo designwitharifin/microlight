@@ -967,7 +967,7 @@ body {
     transition: .5s;
     font-family: var(--body-font);
     background-color: var(--white);
-    background-image: url('../img/background/bg-body.png');
+    background-image: url('../img/background/bg-body-compress.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1168,104 +1168,6 @@ a {
     width: var(--nav-width);
     height: 100vh;
     background-color: var(--secondary-700);
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-primary {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--primary-500);
-    background-image: url('/assets/img/background/bg-sidenav-primary.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-secondary {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--primary-500);
-    background-image: url('/assets/img/background/bg-sidenav-secondary.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-success {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--success-900);
-    background-image: url('/assets/img/background/bg-sidenav-success.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-danger {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--success-900);
-    background-image: url('/assets/img/background/bg-sidenav-danger.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-warning {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--success-900);
-    background-image: url('/assets/img/background/bg-sidenav-warning.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-info {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--success-900);
-    background-image: url('/assets/img/background/bg-sidenav-info.svg');
-    background-position: center;
-    padding: .5rem 1rem 0 0;
-    transition: .5s;
-    z-index: var(--z-fixed);
-}
-
-.bg-sidenav-dark {
-    position: fixed;
-    top: 0;
-    left: -30%;
-    width: var(--nav-width);
-    height: 100vh;
-    background-color: var(--success-900);
-    background-image: url('/assets/img/background/bg-sidenav-dark.svg');
-    background-position: center;
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed);
