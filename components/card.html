@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Blank Page</title>
+    <title>Microlight &mdash; Card</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -187,11 +187,11 @@
                                 <a href="#" class="accordion-items p-2">Badge</a>
                                 <a href="#" class="accordion-items p-2">Breadcrumb</a>
                                 <a href="#" class="accordion-items p-2">Buttons</a>
-                                <a href="#" class="accordion-items p-2">Card</a>
+                                <a href="/components/card.html" class="accordion-items p-2">Card</a>
                                 <a href="#" class="accordion-items p-2">Carousel</a>
                                 <a href="#" class="accordion-items p-2">Collapse</a>
                                 <a href="#" class="accordion-items p-2">Dropdown</a>
-                                <a href="#" class="accordion-items p-2">Form</a>
+                                <a href="/pages/form.html" class="accordion-items p-2">Form</a>
                                 <a href="#" class="accordion-items p-2">List Group</a>
                                 <a href="#" class="accordion-items p-2">Media Object</a>
                                 <a href="#" class="accordion-items p-2">Modal</a>
@@ -200,7 +200,7 @@
                                 <a href="#" class="accordion-items p-2">Pagination</a>
                                 <a href="#" class="accordion-items p-2">Popover</a>
                                 <a href="#" class="accordion-items p-2">Progress</a>
-                                <a href="#" class="accordion-items p-2">Table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Table</a>
                                 <a href="#" class="accordion-items p-2">Tooltip</a>
                                 <a href="#" class="accordion-items p-2">Typography</a>
                             </div>
@@ -229,7 +229,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -312,15 +312,138 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Blank page</h2>
+                <h2 class="fw-bold">Card Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Card components</li>
                     </ol>
                 </nav>
             </div>
         </div>
+        <!-- Section title -->
+        <h5 class="fw-bold">Card</h5>
+        <p class="md-text-rg text-secondary-500">Card by default here</p>
+
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                <div class="mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="card-title">Card Title</h6>
+                        </div>
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                        <div class="card-footer">
+                            Footer Card
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="card-title">Card Title</h6>
+                    </div>
+                    <div class="card-body">
+                        This is some text within a card body.
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary btn-md">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 mb-4">
+                <div class="mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="card-title">Card Title</h6>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 class="card-title">Footer <code>bg-whitesmoke</code></h6>
+                        </div>
+                        <div class="card-body">
+                            This is some text within a card body.
+                        </div>
+                        <div class="card-footer bg-whitesmoke">
+                            Footer Card
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section title -->
+        <h5 class="fw-bold">Card with image</h5>
+        <p class="md-text-rg text-secondary-500">Card image with date label</p>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3">
+                    <img src="https://demos.wrappixel.com/premium-admin-templates/bootstrap/severny-bootstrap/src/assets/images/big/img4.jpg"
+                        class="card-img-thumbnail rounded-2" alt="thumbnail-blog">
+                    <div class="card-body">
+                        <div class="py-2">
+                            <i class='bx bx-calendar-week align-middle'></i> <span
+                                class="sm-text-rg text-secondary-500">20 May
+                                2022</span>
+                        </div>
+                        <h5 class="fw-bold text-truncate">Logo color blue in 2022</h5>
+                        <p class="md-text-rg text-secondary-500">Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Dolore, quibusdam.</p>
+                        <button class="btn btn-primary btn-md">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3">
+                    <img src="https://demos.wrappixel.com/premium-admin-templates/bootstrap/severny-bootstrap/src/assets/images/big/img5.jpg"
+                        class="card-img-thumbnail rounded-2" alt="thumbnail-blog">
+                    <div class="card-body p-3">
+                        <div class="py-2">
+                            <i class='bx bx-calendar-week align-middle'></i> <span
+                                class="sm-text-rg text-secondary-500">20 May
+                                2022</span>
+                        </div>
+                        <h5 class="fw-bold text-truncate">Line color 3D trend this year</h5>
+                        <p class="md-text-rg text-secondary-500">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vitae, voluptatibus.</p>
+                        <button class="btn btn-primary btn-md">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card p-3">
+                    <img src="https://demos.wrappixel.com/premium-admin-templates/bootstrap/severny-bootstrap/src/assets/images/big/img6.jpg"
+                        class="card-img-thumbnail rounded-2" alt="thumbnail-blog">
+                    <div class="card-body p-3">
+                        <div class="py-2">
+                            <i class='bx bx-calendar-week align-middle'></i> <span
+                                class="sm-text-rg text-secondary-500">20 May
+                                2022</span>
+                        </div>
+                        <h5 class="fw-bold text-truncate">Featured Hydroflora Pots Garden & Outdoors</h5>
+                        <p class="md-text-rg text-secondary-500">Lorem ipsum
+                            dolor sit amet consectetur
+                            adipisicing
+                            elit. Vitae, voluptatibus.</p>
+                        <button class="btn btn-primary btn-md">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Card with progress -->
+
+        </div>
+
     </div>
 
 

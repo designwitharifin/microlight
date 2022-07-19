@@ -245,14 +245,26 @@
 .card-header {
     background-color: transparent;
     border: 1px solid var(--secondary-100);
-    padding: 20px;
+    padding: 15px;
     font-weight: var(--font-weight-bold);
 }
 
 .card-footer {
     background-color: transparent;
     border: 1px solid var(--secondary-100);
-    padding: 20px;
+    padding: 15px;
+}
+
+.card-text {
+    font-size: var(--text-medium-font-size);
+}
+
+.card-link {
+    font-size: var(--text-medium-font-size);
+}
+
+.bg-whitesmoke {
+    background-color: var(--secondary-50);
 }
 
 
@@ -291,6 +303,13 @@
     font-weight: var(--font-weight-regular);
 }
 
+/*===== card custom ===== */
+
+/* card blog */
+.card .card-img-thumbnail {
+    height: 250px;
+    object-fit: cover;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Form input
