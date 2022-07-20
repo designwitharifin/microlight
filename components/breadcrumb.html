@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Blank Page</title>
+    <title>Microlight &mdash; Breaedcrumb</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -201,7 +201,7 @@
                                 <a href="#" class="accordion-items p-2">Pagination</a>
                                 <a href="#" class="accordion-items p-2">Popover</a>
                                 <a href="#" class="accordion-items p-2">Progress</a>
-                                <a href="#" class="accordion-items p-2">Table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Table</a>
                                 <a href="#" class="accordion-items p-2">Tooltip</a>
                                 <a href="#" class="accordion-items p-2">Typography</a>
                             </div>
@@ -230,7 +230,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -313,13 +313,154 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Blank page</h2>
+                <h2 class="fw-bold">Breadcrumb Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Breadcrumb page</li>
                     </ol>
                 </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Default</h6>
+                    </div>
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item active" aria-current="page">Home</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item">Data</li>
+                            </ol>
+                        </nav>
+                        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                            aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item">Data</li>
+                            </ol>
+                        </nav>
+                        <nav style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                                <li class="breadcrumb-item">Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Icon</h6>
+                    </div>
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item active" aria-current="page"><i
+                                        class='bx bx-tachometer align-middle'></i> Home</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-light p-2 rounded-1">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Background</h6>
+                    </div>
+                    <div class="card-body">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-primary-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-secondary-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-success-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-warning-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-danger-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-info-500 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-secondary-400 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb text-bg-secondary-700 p-2 rounded-1 text-white-all">
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-tachometer align-middle'></i>
+                                        Home</a></li>
+                                <li class="breadcrumb-item"><a href="#"><i class='bx bx-file-blank align-middle'></i>
+                                        Library</a></li>
+                                <li class="breadcrumb-item"><i class='bx bx-list-ul align-middle'></i> Data</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

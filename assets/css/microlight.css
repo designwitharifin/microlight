@@ -619,6 +619,13 @@ input[type="range"]:hover {
     font-weight: var(--font-weight-medium);
 }
 
+/* Button Group */
+
+.btn-group {
+    border-radius: var(--rounded-2) !important;
+    overflow: hidden;
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Button Color
@@ -703,6 +710,16 @@ input[type="range"]:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Text colors
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+/* Text color white */
+.text-white-all li a {
+    color: white !important;
+}
+
+.text-white-all *:before,
+.text-white-all *:after {
+    color: #ffffff !important;
+}
 
 /* primary */
 .text-primary-50 {
@@ -1101,10 +1118,11 @@ body {
     background-position: center;
 }
 
-
+/* Link */
 a {
     text-decoration: none;
 }
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Header
@@ -1374,11 +1392,11 @@ a {
 }
 
 /*Active links*/
-.active {
+.nav__link.active {
     color: var(--white);
 }
 
-.active::before {
+.nav__link.active::before {
     content: '';
     position: absolute;
     left: 0;
@@ -1846,7 +1864,6 @@ th {
     height: 100px;
 }
 
-
 img.thumbnail-table-rounded {
     width: 44px;
     height: 44px;
@@ -1872,6 +1889,7 @@ table.bullet,
 table.bullet:after {
     content: '\2022';
 }
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination
@@ -1962,6 +1980,42 @@ table.bullet:after {
     right: 0;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Alert components
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.accordion,
+.accordion-button {
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border: none;
+    background-color: transparent;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 9px;
+}
+
+.accordion-button:focus {
+    border-color: #aa8eff;
+    box-shadow: none;
+}
+
+.accordion-button {
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-500);
+    font-size: var(--large-text-medium-font-size);
+    font-weight: bold;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Footer
@@ -1989,6 +2043,14 @@ table.bullet:after {
     content: '\2022';
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Template for layout UI
+| Note: Not important for your project
+|
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.buttons a {
+    margin: 0.5rem 0 0.5rem 0;
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
