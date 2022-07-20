@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Blank Page</title>
+    <title>Microlight &mdash; Dropdown</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -201,7 +201,7 @@
                                 <a href="#" class="accordion-items p-2">Pagination</a>
                                 <a href="#" class="accordion-items p-2">Popover</a>
                                 <a href="#" class="accordion-items p-2">Progress</a>
-                                <a href="#" class="accordion-items p-2">Table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Table</a>
                                 <a href="#" class="accordion-items p-2">Tooltip</a>
                                 <a href="#" class="accordion-items p-2">Typography</a>
                             </div>
@@ -230,7 +230,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -313,13 +313,48 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Blank page</h2>
+                <h2 class="fw-bold">Dropdown Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Dropdown page</li>
                     </ol>
                 </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Simple</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="dropdown-card">
+                            <div class="dropdown d-inline">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown button <i class="bi bi-chevron-down align-center"></i>
+                                </button>
+                                <ul class="dropdown-menu shadow-lg">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown d-inline">
+                                <button class="btn btn-primary" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown button <i class="bi bi-chevron-down align-center"></i>
+                                </button>
+                                <ul class="dropdown-menu shadow-lg">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

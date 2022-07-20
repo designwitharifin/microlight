@@ -1892,6 +1892,20 @@ table.bullet:after {
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Dropdown
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.dropdown-card .dropdown-menu {
+    height: auto !important;
+    position: relative !important;
+    transform: translate3d(0, 0, 90px) !important;
+}
+
+.dropdown-menu {
+    border: none;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 

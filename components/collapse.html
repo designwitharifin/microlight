@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Blank Page</title>
+    <title>Microlight &mdash; Layout Default</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -201,7 +201,7 @@
                                 <a href="#" class="accordion-items p-2">Pagination</a>
                                 <a href="#" class="accordion-items p-2">Popover</a>
                                 <a href="#" class="accordion-items p-2">Progress</a>
-                                <a href="#" class="accordion-items p-2">Table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Table</a>
                                 <a href="#" class="accordion-items p-2">Tooltip</a>
                                 <a href="#" class="accordion-items p-2">Typography</a>
                             </div>
@@ -230,7 +230,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -313,13 +313,84 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Blank page</h2>
+                <h2 class="fw-bold">Collapse Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Collapse page</li>
                     </ol>
                 </nav>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Simple -->
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Simple</h6>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <a class="btn btn-primary btn-md mb-3" data-bs-toggle="collapse" href="#collapseExample"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Link with href
+                            </a>
+                            <button class="btn btn-primary btn-md mb-3" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                Button with data-bs-target
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body shadow-md">
+                                Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Multiple -->
+            <div class="col-md-6 mb-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Multiple</h6>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <a class="btn btn-primary btn-md mb-1" data-bs-toggle="collapse"
+                                href="#multiCollapseExample1" role="button" aria-expanded="false"
+                                aria-controls="multiCollapseExample1">Toggle first
+                                element</a>
+                            <button class="btn btn-primary btn-md mb-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                aria-controls="multiCollapseExample2">Toggle second element</button>
+                            <button class="btn btn-primary btn-md mb-1" type="button" data-bs-toggle="collapse"
+                                data-bs-target=".multi-collapse" aria-expanded="false"
+                                aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both
+                                elements</button>
+                        </p>
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body shadow-md">
+                                        Some placeholder content for the first collapse component of this multi-collapse
+                                        example. This panel is hidden by default but revealed when the user activates
+                                        the relevant trigger.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body shadow-md">
+                                        Some placeholder content for the second collapse component of this
+                                        multi-collapse example. This panel is hidden by default but revealed when the
+                                        user activates the relevant trigger.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
