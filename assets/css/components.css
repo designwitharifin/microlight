@@ -1,0 +1,56 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+| Readme: 
+|
+| This is file for only styling css for every components
+| Don't remove main css 👉 microlight.css. if you do then style uniq from this template 
+| not working!
+|
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+@import url('microlight.css');
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Alert components
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.accordion,
+.accordion-button {
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.accordion-item {
+    border: none;
+    background-color: transparent;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 9px;
+}
+
+.accordion-button:focus {
+    border-color: #aa8eff;
+    box-shadow: none;
+}
+
+.accordion-button {
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary-500);
+    font-size: var(--large-text-medium-font-size);
+    font-weight: bold;
+    background-color: var(--white);
+    box-shadow: var(--shadow-sm);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Alert components
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.badge {
+    opacity: 10% !important;
+}
