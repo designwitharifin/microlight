@@ -323,34 +323,90 @@
             </div>
         </div>
         <div class="row">
+            <!-- Simple -->
             <div class="col-md-6">
-                <div class="card">
+                <div class="card mb-4">
                     <div class="card-header">
                         <h6 class="fw-bold">Simple</h6>
                     </div>
                     <div class="card-body">
                         <div class="dropdown-card">
-                            <div class="dropdown d-inline">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button <i class="bi bi-chevron-down align-center"></i>
-                                </button>
-                                <ul class="dropdown-menu shadow-lg">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                            <div class="bd-example d-flex">
+                                <div class="dropdown me-3">
+                                    <button class="btn btn-primary btn-md dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <button class="btn btn-success btn-md dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown button
+                                    </button>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="dropdown d-inline">
-                                <button class="btn btn-primary" type="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown button <i class="bi bi-chevron-down align-center"></i>
-                                </button>
-                                <ul class="dropdown-menu shadow-lg">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Split button</h6>
+                    </div>
+                    <div class="card-body">
+                        <!-- Example split danger button -->
+                        <div class="btn-group rounded">
+                            <button type="button" class="btn btn-danger">Action</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Simple -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Icon</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="dropdown-card">
+                            <div class="bd-example d-flex">
+                                <div class="dropdown me-3">
+                                    <button class="btn btn-primary btn-md dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        With icon
+                                    </button>
+                                    <ul class="dropdown-menu shadow-lg">
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-chat-square-heart"></i>
+                                                Action</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-plus"></i>
+                                                Another action</a></li>
+                                        <li><a class="dropdown-item" href="#"><i class="bi bi-collection"></i> Something
+                                                else here</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
