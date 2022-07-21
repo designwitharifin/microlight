@@ -447,7 +447,7 @@ textarea {
     border: 1px solid var(--secondary-200) !important;
     font-size: var(--text-medium-font-size);
     font-weight: var(--font-weight-regular);
-    color: var(--primary-500) !important;
+
 }
 
 input::placeholder,
@@ -455,6 +455,12 @@ select::placeholder,
 textarea::placeholder {
     font-size: var(--text-medium-font-size);
     font-weight: var(--font-weight-regular);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    color: var(--primary-500) !important;
 }
 
 input:hover,
@@ -537,6 +543,7 @@ input[type="range"]:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Buttons
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 /* Button image */
 .btn-img-auth img {
     width: 24px;
@@ -599,6 +606,7 @@ input[type="range"]:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Button size
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 .btn-sm {
     padding: 3px 25px;
     border-radius: 6px;
@@ -619,6 +627,9 @@ input[type="range"]:hover {
     font-weight: var(--font-weight-medium);
 }
 
+.btn-group .btn {
+    border-radius: 8px;
+}
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -1813,7 +1824,7 @@ a {
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* Input
+* Search
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 input[type="search"] {
@@ -1970,7 +1981,7 @@ table.bullet:after {
 }
 
 .modal-search input[type=text]::placeholder {
-    color: var(--secondary-300);
+    color: var(--secondary-300) !important;
     font-size: var(--headline-1-font-size) !important;
     font-weight: var(--font-weight-bold) !important;
 }
