@@ -1401,6 +1401,11 @@ a {
     font-size: 1.25rem;
 }
 
+/* Pills */
+.nav-pills .nav-item .active {
+    border-radius: 8px !important;
+}
+
 /*Show navbar movil*/
 .show {
     left: 0;
