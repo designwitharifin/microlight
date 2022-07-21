@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Blank Page</title>
+    <title>Microlight &mdash; Toasts</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -231,7 +231,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -314,13 +314,65 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Blank page</h2>
+                <h2 class="fw-bold">Toast Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Toast page</li>
                     </ol>
                 </nav>
+            </div>
+        </div>
+        <div class="row">
+
+            <div class="col-md-6">
+                <!-- Simple -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Simple</h6>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="/assets/img/brand/icon.svg" class="rounded me-2" alt="...">
+                                    <strong class="me-auto">Microlight</strong>
+                                    <small class="text-secondary-400">11 mins ago</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body text-secondary-500">
+                                    Hello, world! This is a toast message.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Toasts custom -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Custom</h6>
+                    </div>
+                    <div class="card-body">
+                        <button type="button" class="btn btn-primary" id="myBtn">Show live toast</button>
+
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="d-flex">
+                                    <div class="toast-body">
+                                        Hello, world! This is a toast message.
+                                    </div>
+                                    <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -375,7 +427,15 @@
             });
         });
     </script>
+    <script>
+        // Toast custom content
+        $(document).ready(function () {
+            $("#myBtn").click(function () {
+                $("#myToast").toast("show");
+            });
+        });
 
+    </script>
 </body>
 
 </html>
