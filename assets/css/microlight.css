@@ -1935,6 +1935,7 @@ table.bullet:after {
     border: none;
     /* transition: all 500ms cubic-bezier(.47, 1.64, .41, .8);
     transform: scale(1); */
+
 }
 
 .modal-content.custom i {
