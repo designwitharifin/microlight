@@ -157,7 +157,7 @@
 
     <!-- Navbar -->
     <div class="l-navbar bg-sidenav-primary-fill" id="nav-bar">
-        <nav class="nav">
+        <nav class="nav nav-content">
             <div>
                 <!-- Brand here -->
                 <a href="/" class="nav__logo">
@@ -196,7 +196,7 @@
                                 <a href="/components/list-group.html" class="accordion-items p-2">List Group</a>
                                 <a href="/components/media-object.html" class="accordion-items p-2">Media Object</a>
                                 <a href="/components/modal.html" class="accordion-items p-2">Modal</a>
-                                <a href="#" class="accordion-items p-2">Nav</a>
+                                <a href="/components/nav.html" class="accordion-items p-2">Nav</a>
                                 <a href="#" class="accordion-items p-2">Navbar</a>
                                 <a href="#" class="accordion-items p-2">Pagination</a>
                                 <a href="#" class="accordion-items p-2">Popover</a>
@@ -397,6 +397,24 @@
                             data-bs-target="#exampleModal">Launch modal</button>
                     </div>
                 </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title fw-bold">Modal title</h6>
+                                <button type="button" class="btn close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="md-text-rg text-secondary-500">Modal body text goes here.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Modal center-->
                 <p class="md-text-rg mt-4">Modal demo for example</p>
                 <div class="card">
@@ -407,11 +425,11 @@
                         <p class="md-text-rg text-secondary-500">You can change the modal position to center.
                         </p>
                         <button class="btn btn-primary btn-md" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Launch modal</button>
+                            data-bs-target="#exampleModalCenter">Launch modal</button>
                     </div>
                 </div>
                 <!-- Modal center-->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterLabel"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
@@ -423,21 +441,6 @@
                             <div class="modal-body">
                                 <p class="md-text-rg text-secondary-500">Modal body text goes here.</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h6 class="modal-title fw-bold">Modal title</h6>
-                            <button type="button" class="btn close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p class="md-text-rg text-secondary-500">Modal body text goes here.</p>
                         </div>
                     </div>
                 </div>

@@ -543,6 +543,9 @@ input[type="range"]:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Buttons
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.btn {
+    border-radius: 8px;
+}
 
 /* Button image */
 .btn-img-auth img {
@@ -1339,14 +1342,15 @@ a {
 .nav {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: auto;
+    /* overflow: auto; */
     -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
     scrollbar-width: none;
-    /* Firefox */
+}
 
+.nav-content {
+    flex-direction: column !important;
+    justify-content: space-between;
+    overflow: auto !important;
 }
 
 .nav::-webkit-scrollbar {
