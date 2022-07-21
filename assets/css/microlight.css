@@ -352,15 +352,13 @@
     object-fit: cover;
 }
 
-/* Card progress rounded */
-/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
 
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Progress
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .progress-rounded {
     width: 150px;
     height: 150px;
@@ -429,6 +427,12 @@
     top: 0;
     left: 0;
 }
+
+.progress {
+    border-radius: var(--rounded-5);
+}
+
+
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -1916,6 +1920,37 @@ table.bullet:after {
 }
 
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Popover
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.popover .popover-header {
+    background: none !important;
+}
+
+.popover {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    box-shadow: var(--shadow-lg);
+    border-radius: var(--rounded-2);
+}
+
+.popover.right>.arrow:after {
+    left: 8px;
+    bottom: -10px;
+}
+
+.popover.right>.arrow {
+    left: -16px;
+    margin-top: -12px;
+    border-right-color: none;
+}
+
+.popover>.arrow {
+    border-width: 12px;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination

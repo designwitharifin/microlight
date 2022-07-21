@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; dashboard</title>
+    <title>Microlight &mdash; Progress</title>
     <!-- Icon Microlight -->
-    <link rel="shortcut icon" href="assets/img/brand/icon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="/main.css">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="assets/css/microlight.css">
+    <link rel="stylesheet" href="/assets/css/microlight.css">
 
     <!-- CSS Libraries -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
 
 <body id="body-pd">
+    <!-- Header -->
     <header class="header" id="header">
         <div class="header__toggle text-primary-500">
             <i class="bi bi-list" id="header-toggle"></i>
@@ -106,7 +107,7 @@
                     <div class="card-body notif">
                         <div class="d-flex mb-3">
                             <div class="float-start">
-                                <img src="assets/img/avatar/avatar-boy.png" alt="avatar" class="w-100">
+                                <img src="/assets/img/avatar/avatar-boy.png" alt="avatar" class="w-100">
                             </div>
                             <div class="description-notification float-end">
                                 <a href="#" class="md-text-md fw-bold text-secondary-700 ps-3 mb-5">Jhon doe</a><br>
@@ -116,7 +117,7 @@
                         </div>
                         <div class="d-flex mb-3">
                             <div class="float-start">
-                                <img src="assets/img/avatar/avatar-girl.png" alt="avatar" class="w-100">
+                                <img src="/assets/img/avatar/avatar-girl.png" alt="avatar" class="w-100">
                             </div>
                             <div class="description-notification float-end">
                                 <a href="#" class="md-text-md fw-bold text-secondary-700 ps-3 mb-5">Elfira</a><br>
@@ -132,7 +133,7 @@
             </ul>
             <!-- Profile link -->
             <a href="#" id="dropdownProfile" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                <img src="assets/img/avatar/avatar-1.jpg" alt="avatar">
+                <img src="/assets/img/avatar/avatar-1.jpg" alt="avatar">
                 <ul class="dropdown-menu border-0 shadow-lg rounded ps-2 pe-5" aria-labelledby="dropdownProfile">
                     <li>
                         <span class="dropdown-header fw-bold">👋 Hey, Fin</span>
@@ -159,19 +160,19 @@
         <nav class="nav nav-content">
             <div>
                 <!-- Brand here -->
-                <a href="#" class="nav__logo">
-                    <img src="assets/img/brand/logo-light.svg" alt="brand" class="nav__logo-icon">
+                <a href="/" class="nav__logo">
+                    <img src="/assets/img/brand/logo-light.svg" alt="brand" class="nav__logo-icon">
                 </a>
 
                 <div class="nav__list">
 
-                    <a href="#" class="nav__link active">
+                    <a href="/" class="nav__link">
                         <i class='bx bx-grid-alt nav__icon bx-tada-hover'></i>
                         <span class="nav__name">Dashboard</span>
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -190,7 +191,7 @@
                                 <a href="/components/card.html" class="accordion-items p-2">Card</a>
                                 <a href="/components/carousel.html" class="accordion-items p-2">Carousel</a>
                                 <a href="/components/collapse.html" class="accordion-items p-2">Collapse</a>
-                                <a href="/components/collapse.html" class="accordion-items p-2">Dropdown</a>
+                                <a href="/components/dropdown.html" class="accordion-items p-2">Dropdown</a>
                                 <a href="/components/form.html" class="accordion-items p-2">Form</a>
                                 <a href="/components/list-group.html" class="accordion-items p-2">List Group</a>
                                 <a href="/components/media-object.html" class="accordion-items p-2">Media Object</a>
@@ -200,7 +201,7 @@
                                 <a href="/components/pagination.html" class="accordion-items p-2">Pagination</a>
                                 <a href="/components/popovers.html" class="accordion-items p-2">Popover</a>
                                 <a href="/components/progress.html" class="accordion-items p-2">Progress</a>
-                                <a href="#" class="accordion-items p-2">Table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Table</a>
                                 <a href="#" class="accordion-items p-2">Tooltip</a>
                                 <a href="#" class="accordion-items p-2">Typography</a>
                             </div>
@@ -271,15 +272,14 @@
                         data-bs-target="#flushTable" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-table nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Table</span>
-
                     </a>
                     <div id="flushTable" class="nav__item accordion-collapse collapse ms-3"
                         aria-labelledby="flush-table" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <div class="d-flex flex-column" id="accordion-container-table">
                                 <span class="dropdown-header p-2 text-secondary-400">Table screens</span>
-                                <a href="table/" class="accordion-items p-2">Data table</a>
-                                <a href="table/custom-table.html" class="accordion-items p-2">Custom table</a>
+                                <a href="/table" class="accordion-items p-2 active">Data table</a>
+                                <a href="/table/custom-table.html" class="accordion-items p-2">Custom table</a>
                             </div>
                         </div>
                     </div>
@@ -313,219 +313,195 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold" id="greetings"></h2>
-                <p class="text-secondary">Dashboard</p>
-            </div>
-            <div class="ms-md-auto py-2 py-md-0">
-                <button class="btn text-bg-white btn-md me-2 mb-2"><i class="bi bi-clock pe-2"></i>Manage</button>
-                <button type="button" class="btn text-bg-white btn-md mb-2" id="dropdownMenuOffset"
-                    data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                    Google <i class="bi bi-chevron-down align-middle ps-2"></i>
-                </button>
-                <ul class="dropdown-menu border-0 shadow-lg text-center" aria-labelledby="dropdownMenuOffset">
-                    <li><a class="dropdown-item" href="#">Youtube</a></li>
-                    <li><a class="dropdown-item" href="#">Instagram</a></li>
-                    <li><a class="dropdown-item" href="#">Facebook</a></li>
-                </ul>
+                <h2 class="fw-bold">Progress Page</h2>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb sm-text-rg">
+                        <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+                        <li class="breadcrumb-item">Progress page</li>
+                    </ol>
+                </nav>
             </div>
         </div>
-
         <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <!-- Card sales -->
+            <div class="col-md-6">
+                <!-- Simple -->
                 <div class="card mb-4">
-                    <div class="card-body mt-1 ms-1">
-                        <div class="icon-card left text-primary-500 float-start">
-                            <i class='bx bx-shopping-bag rounded-bag bg-primary rounded-2 bg-opacity-10'></i>
-                        </div>
-                        <div class="icon-card right text-secondary-500 float-end">
-                            <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
-                        </div>
-                        <br>
-                        <div class="label-card">
-                            <p class="text-secondary mt-3">Total sales</p>
-                        </div>
-                        <h4 class="fw-bold text-secondary-700">$75,809.97</h4>
-                        <span class="align-text-bottom text-success icon-card range"><i
-                                class='bx bx-trending-up align-middle'></i>
-                            12.00%, <label class="text-secondary">From June</label></span>
+                    <div class="card-header">
+                        <h6 class="fw-bold">Simple</h6>
                     </div>
-                </div>
-                <!-- Card sales -->
-                <div class="card mb-4">
-                    <div class="card-body mt-1 ms-1">
-                        <div class="icon-card left text-primary-500 float-start">
-                            <i class='bx bx-desktop rounded-bag bg-primary rounded-2 bg-opacity-10'></i>
-                        </div>
-                        <div class="icon-card right text-secondary-500 float-end">
-                            <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
-                        </div>
-                        <br>
-                        <div class="label-card">
-                            <p class="text-secondary mt-3">Online session</p>
-                        </div>
-                        <h4 class="fw-bold text-secondary-700">98,876 k</h4>
-                        <span class="align-text-bottom text-success icon-card range"><i
-                                class='bx bx-trending-up align-middle'></i>
-                            5.50%, <label class="text-secondary">From June</label></span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                <!-- Card sales -->
-                <div class="card mb-4">
-                    <div class="card-body mt-1 ms-1">
-                        <div class="icon-card left text-primary-500 float-start">
-                            <i class='bx bx-wallet rounded-bag bg-primary rounded-2 bg-opacity-10'></i>
-                        </div>
-                        <div class="icon-card right text-secondary-500 float-end">
-                            <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
-                        </div>
-                        <br>
-                        <div class="label-card">
-                            <p class="text-secondary mt-3">Avg.order value</p>
-                        </div>
-                        <h4 class="fw-bold text-secondary-700">$10,809.97</h4>
-                        <span class="align-text-bottom text-danger icon-card range"><i
-                                class='bx bx-trending-down align-middle'></i>
-                            10.07%, <label class="text-secondary">From July</label></span>
-                    </div>
-                </div>
-                <!-- Card sales -->
-                <div class="card mb-4">
-                    <div class="card-body mt-1 ms-1">
-                        <div class="icon-card left text-primary-500 float-start">
-                            <i class='bx bx-rocket rounded-bag bg-primary rounded-2 bg-opacity-10'></i>
-                        </div>
-                        <div class="icon-card right text-secondary-500 float-end">
-                            <i class='bx bx-dots-horizontal-rounded bx-sm'></i>
-                        </div>
-                        <br>
-                        <div class="label-card">
-                            <p class="text-secondary mt-3">Total sales</p>
-                        </div>
-                        <h4 class="fw-bold text-secondary-700">98.56%</h4>
-                        <span class="align-text-bottom text-success icon-card range"><i
-                                class='bx bx-trending-up align-middle'></i>
-                            2.50%%, <label class="text-secondary">From June</label></span>
-                    </div>
-                </div>
-            </div>
-            <!-- Card line chart -->
-            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                <div class="card mb-4">
                     <div class="card-body">
-                        <div>
-                            <div class="mb-1" id="linechart"> </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="0"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 25%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 50%"
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 75%"
+                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 100%"
+                                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Card progressbar -->
-            <div class="col-lg-3 col-md-12 col-sm-12">
+                <!-- Labels -->
                 <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Labels</h6>
+                    </div>
                     <div class="card-body">
-                        <div class="mt-1">
-                            <h6 class="fw-bold mb-4">Country</h6>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
                         </div>
-                        <div class="mb-4">
-                            <label class="md-text-md text-secondary-700">Indonesia</label>
-                            <div class="count float-end lg-text-md text-secondary-500">50.56</div>
-                            <div class="progress mt-3" style="height: 9px;">
-                                <div class="progress-bar rounded-pill" role="progressbar" style="width: 50%;"
-                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
-                        <div class="mb-4">
-                            <label class="md-text-md text-secondary-700">United States</label>
-                            <div class="count float-end lg-text-md text-secondary-500">60.56</div>
-                            <div class="progress mt-3" style="height: 9px;">
-                                <div class="progress-bar rounded-pill" role="progressbar" style="width: 60%;"
-                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
                         </div>
-                        <div class="mb-4">
-                            <label class="md-text-md text-secondary-700">Japan</label>
-                            <div class="count float-end lg-text-md text-secondary-500">45.65</div>
-                            <div class="progress mt-3" style="height: 9px;">
-                                <div class="progress-bar rounded-pill" role="progressbar" style="width: 45%;"
-                                    aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                         </div>
-                        <div class="mb-2">
-                            <label class="md-text-md text-secondary-700">Malaysia</label>
-                            <div class="count float-end lg-text-md text-secondary-500">25.56</div>
-                            <div class="progress mt-3" style="height: 9px;">
-                                <div class="progress-bar rounded-pill" role="progressbar" style="width: 25%;"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-label="Example with label"
+                                style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Card table -->
-            <div class="col-lg-9 col-md-12 col-sm-12">
-                <div class="card">
+            <div class="col-md-6">
+                <!-- Height -->
+                <div class="card  mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Height</h6>
+                    </div>
                     <div class="card-body">
-                        <div class="card-header bg-transparent border-0 ps-0 mb-3">
-                            <h6 class="fw-bold">Product sales</h6>
+                        <div class="progress mb-4" style="height: 5px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Example 5px high"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <div class="table-responsive">
-                            <table class="table table-borderless">
-                                <thead>
-                                    <tr>
-                                        <th scope="col lg-text-md">Project</th>
-                                        <th scope="col lg-text-md">Customer</th>
-                                        <th scope="col lg-text-md">Status</th>
-                                        <th scope="col lg-text-md">Invoice</th>
-                                        <th scope="col lg-text-md">Amount</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td scope="row align-middle">
-                                            <img src="https://images.unsplash.com/photo-1656848221842-974d8be992ca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
-                                                alt="img-product" class="thumbnail-table-rounded rounded-100 me-3">
-                                            <span class="fw-bold">Lamp Wall</span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">Fin</td>
-                                        <td class="align-middle"><span class="badge text-bg-primary-50">
-                                                <div class="bullet"></div>Shipping
-                                            </span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">345345</td>
-                                        <td class="align-middle md-text-rg fw-bold">$125.60</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row align-middle">
-                                            <img src="https://images.unsplash.com/photo-1655012325404-cd804b6d8ada?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
-                                                alt="img-product" class="thumbnail-table-rounded rounded-100 me-3">
-                                            <span class="fw-bold">Chair</span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">Elfira</td>
-                                        <td class="align-middle"><span class="badge text-bg-warning-100">
-                                                <div class="bullet"></div>Pending
-                                            </span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">345345</td>
-                                        <td class="align-middle md-text-rg fw-bold">$125.60</td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row align-middle">
-                                            <img src="https://images.unsplash.com/photo-1655012325191-cbc22182fa9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80"
-                                                alt="img-product" class="thumbnail-table-rounded rounded-100 me-3">
-                                            <span class="fw-bold">Table</span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">Jhon Doe</td>
-                                        <td class="align-middle"><span class="badge text-bg-success-50">
-                                                <div class="bullet"></div>Completed
-                                            </span>
-                                        </td>
-                                        <td class="align-middle md-text-rg">345345</td>
-                                        <td class="align-middle md-text-rg fw-bold">$125.60</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="progress mb-4" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Example 10px high"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 15px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Example 15px high"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 20px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Example 20px high"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4" style="height: 25px;">
+                            <div class="progress-bar" role="progressbar" aria-label="Example 25px high"
+                                style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Background -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Background</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-primary" role="progressbar" aria-label="primary example"
+                                style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-success" role="progressbar" aria-label="Success example"
+                                style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-info" role="progressbar" aria-label="Info example"
+                                style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-warning" role="progressbar" aria-label="Warning example"
+                                style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar bg-danger" role="progressbar" aria-label="Danger example"
+                                style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Multiple bars -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Multiple bars</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" aria-label="Segment one" style="width: 15%"
+                                aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-success" role="progressbar" aria-label="Segment two"
+                                style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-info" role="progressbar" aria-label="Segment three"
+                                style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Animated striped -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Animated striped</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Striped -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Striped</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped" role="progressbar"
+                                aria-label="primary example" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                                aria-label="Success example" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                                aria-label="Info example" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                                aria-label="Warning example" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                aria-valuemax="100"></div>
+                        </div>
+                        <div class="progress mb-4">
+                            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                                aria-label="Danger example" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                                aria-valuemax="100"></div>
                         </div>
                     </div>
                 </div>
@@ -544,16 +520,13 @@
         </div>
     </footer>
     <!-- General JS Scripts -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
     <!-- Template JS FIle -->
-    <script src="node_modules/bootstrap/dist/js/main.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/main.js"></script>
 
     <!-- Js Libraries -->
-    <script src="assets/js/apexchrats.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/chart.js"></script>
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
     <script>
         // Collapse sidebar accordion container components 
         $(function () {
@@ -586,6 +559,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>
