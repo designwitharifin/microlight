@@ -1089,6 +1089,9 @@ input[type="range"]:hover {
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Dropdown menu
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.dropdown-header {
+    font-size: var(--small-text-medium-font-size) !important;
+}
 
 .dropdown-menu {
     border-radius: 12px !important;
