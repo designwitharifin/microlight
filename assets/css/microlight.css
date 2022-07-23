@@ -226,7 +226,21 @@
     background-color: var(--secondary-400);
 }
 
+.colors {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+}
 
+.colors .color {
+    border-radius: var(--rounded-2);
+    width: calc((100% / 4) - 10px);
+    padding: 10px;
+    height: 60px;
+    line-height: 40px;
+    text-align: center;
+    margin: 5px;
+}
 
 
 
@@ -1961,6 +1975,66 @@ table.bullet:after {
 
 .popover>.arrow {
     border-width: 12px;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Code editor
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+pre[class*=language-] {
+    border: none !important;
+    border-radius: var(--rounded-2) !important;
+    background-color: var(--secondary-900) !important;
+}
+
+.token.builtin,
+.token.constant,
+.token.keyword,
+.token.property,
+.token.selector,
+.token.symbol {
+    /* color: var(--primary-200) !important; */
+}
+
+.language-markup .token.attr-name,
+.language-markup .token.punctuation,
+.language-markup .token.tag {
+    /* color: var(--success-300); */
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Blocquote
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.blockquote {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    padding: 20px;
+    padding-left: 40px;
+    font-style: oblique;
+    background-color: var(--secondary-100);
+    border-radius: var(--rounded-2);
+    position: relative;
+    font-family: 'Time new Romans';
+    font-size: 16px;
+    letter-spacing: .3px;
+}
+
+blockquote:before {
+    content: '"';
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: .2;
+}
+
+blockquote .blockquote-footer {
+    margin-top: 10px;
+}
+
+.blockquote-footer {
+    display: block;
+    font-size: 80%;
+    color: var(--secondary-500);
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

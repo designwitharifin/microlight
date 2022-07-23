@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Layout Default</title>
+    <title>Microlight &mdash; Tooltip</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -182,7 +182,7 @@
                         aria-labelledby="flush-components" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body modal-dialog-scrollable">
                             <div class="d-flex flex-column" id="accordion-container-components">
-                                <span class="dropdown-header p-2 text-secondary-400">Informasi Pendaftaran</span>
+                                <span class="dropdown-header p-2 text-secondary-400">Custom components</span>
                                 <a href="/components/accordion.html" class="accordion-items p-2">Accordion</a>
                                 <a href="/components/alert.html" class="accordion-items p-2">Alert</a>
                                 <a href="/components/badge.html" class="accordion-items p-2">Badge</a>
@@ -203,8 +203,8 @@
                                 <a href="/components/progress.html" class="accordion-items p-2">Progress</a>
                                 <a href="/components/table.html" class="accordion-items p-2">Table</a>
                                 <a href="/components/toasts.html" class="accordion-items p-2">Toasts</a>
-                                <a href="#" class="accordion-items p-2">Tooltip</a>
-                                <a href="#" class="accordion-items p-2">Typography</a>
+                                <a href="/components/tooltips.html" class="accordion-items p-2">Tooltip</a>
+                                <a href="/components/typography.html" class="accordion-items p-2">Typography</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +231,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-pages" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-pages" data-bs-toggle="collapse"
                         data-bs-target="#flushPages" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-folder nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Pages</span>
@@ -314,28 +314,36 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Layout Default Page</h2>
+                <h2 class="fw-bold">Tooltip Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Blank page</li>
+                        <li class="breadcrumb-item">Tooltip page</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="card">
             <div class="card-header">
-                Header
+                <h6 class="fw-bold">Example</h6>
             </div>
             <div class="card-body">
-                <p class="md-text-rg text-secondary-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="card-footer">
-                <p class="md-text-rg">This is card footer</p>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-title="Tooltip on top">
+                    Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right"
+                    data-bs-title="Tooltip on right">
+                    Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-title="Tooltip on bottom">
+                    Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left"
+                    data-bs-title="Tooltip on left">
+                    Tooltip on left
+                </button>
             </div>
         </div>
     </div>

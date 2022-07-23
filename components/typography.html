@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Popover</title>
+    <title>Microlight &mdash; Typography</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -17,6 +17,7 @@
     <!-- CSS Libraries -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/prism.css">
 
 </head>
 
@@ -314,72 +315,261 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Popover Page</h2>
+                <h2 class="fw-bold">Typography Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Popover page</li>
+                        <li class="breadcrumb-item">Typography page</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <!-- Directions -->
+                <!-- Text -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h6 class="fw-bold">Directions</h6>
+                        <h6 class="fw-bold">Text</h6>
                     </div>
                     <div class="card-body">
-                        <div class="buttons">
-                            <div class="mb-2">
-                                <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                    Popover on top
-                                </button>
-                                <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                    data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
-                                    Popover on right
-                                </button>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                Popover on bottom
-                            </button>
-                            <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
-                                Popover on left
-                            </button>
+                        <div class="card-body">
+                            <h1>Heading 1</h1>
+                            <h2>Heading 2</h2>
+                            <h3>Heading 3</h3>
+                            <h4>Heading 4</h4>
+                            <h5>Heading 5</h5>
+                            <h6>Heading 6</h6>
+                            <h3 class="mt-4">
+                                Fancy display heading
+                                <small class="text-muted">With faded secondary text</small>
+                            </h3>
+                            <p class="lead mt-4">
+                                Lead — Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis
+                                mollis, est
+                                non commodo luctus.
+                            </p>
+                            <p class="mt-4 mb-4">Paragraph — Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do
+                                eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <a href="#">You can click me!</a>
                         </div>
                     </div>
                 </div>
-                <!-- Disabled -->
+                <!-- Text color -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h6 class="fw-bold">Disabled Popover</h6>
+                        <h6 class="fw-bold">Text color</h6>
+                    </div>
+                    <div class="row card-body">
+                        <div class="col">
+                            <p class="md-text-rg">Use the <code>.text-{color}</code> classes.</p>
+                            <div class="text-primary mb-2">Text Primary</div>
+                            <div class="text-secondary mb-2">Text Secondary</div>
+                            <div class="text-success mb-2">Text Success</div>
+                            <div class="text-danger mb-2">Text Danger</div>
+                            <div class="text-info mb-2">Text Info</div>
+                            <div class="text-warning mb-2">Text Warning</div>
+                            <div class="text-light mb-2">Text Light</div>
+                            <div class="text-dark mb-2">Text Dark</div>
+                        </div>
+                        <div class="col">
+                            <p class="md-text-rg">Use the <code>.text-{color-code}</code> classes.</p>
+                            <div class="text-primary-900 mb-2">Text Primary 900</div>
+                            <div class="text-secondary-800 mb-2">Text Secondary 800</div>
+                            <div class="text-success-700 mb-2">Text Success 700</div>
+                            <div class="text-danger-600 mb-2">Text Danger 600</div>
+                            <div class="text-info-500 mb-2">Text Info 500</div>
+                            <div class="text-warning-400 mb-5">Text Warning 400</div>
+
+                            <small class="sm-text-rg text-secondary-500 mt-5">Note: available utilities color 50 -
+                                900 🌈</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- Inline text element -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Inline Text Element</h6>
                     </div>
                     <div class="card-body">
-                        <div class="buttons">
-                            <div class="mb-2">
-                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-                                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-                                </span>
+                        <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                        <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                        <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                        <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                        <p><u>This line of text will render as underlined</u></p>
+                        <p><small>This line of text is meant to be treated as fine print.</small></p>
+                        <p><strong>This line rendered as bold text.</strong></p>
+                        <p><em>This line rendered as italicized text.</em></p>
+                    </div>
+                </div>
+                <!-- Abbreviations -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Abbreviations</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <p><abbr title="attribute">attr</abbr></p>
+                            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Colors -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Color</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="colors">
+                            <div class="color bg-primary text-white">
+                                <div>Primary</div>
+                            </div>
+                            <div class="color bg-secondary text-white">
+                                <div>Secondary</div>
+                            </div>
+                            <div class="color bg-success text-white">
+                                <div>Success</div>
+                            </div>
+                            <div class="color bg-info text-white">
+                                <div>Info</div>
+                            </div>
+                            <div class="color text-bg-warning text-white">
+                                <div>Warning</div>
+                            </div>
+                            <div class="color bg-danger text-white">
+                                <div>Danger</div>
+                            </div>
+                            <div class="color bg-light">
+                                <div>Light</div>
+                            </div>
+                            <div class="color bg-dark text-white">
+                                <div>Dark</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Code block -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Text block</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class=" sm-text-rg text-secondary-500 mt-0 mb-3">Blockquote</div>
+                            <blockquote class="blockquote">
+                                <p>A well-known quote, contained in a blockquote element.</p>
+                            </blockquote>
+                            <div class="sm-text-rg text-secondary-500 mt-0 mb-3">Inline Code</div>
+                            <p class="md-text-rg">Lorem ipsum dolor sit amet, <code>consectetur</code> adipisicing elit,
+                                sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud <code>exercitation</code> ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</p>
+                            <div class=" sm-text-rg text-secondary-500 mt-0 mb-3">Code block</div>
+                            <p class="md-text-rg">We use PrismJS to do this, you can adjust themes, syntax and more. <a
+                                    href="http://prismjs.com">Visit their documentation</a>
+                            <pre class="language-html">
+                            <code><!--
+                            <div class="card">
+                                <div class="card-body">
+                                  Welcome to microlight template 🔥
+                                </div>
+                            </div>
+                            --></code></pre>
+                        </div>
+                    </div>
+                </div>
+                <!-- Display -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Display</h6>
+                    </div>
+                    <div class="card-body text-secondary-700">
+                        <h1 class="display-1">Display 1</h1>
+                        <hr>
+                        <h1 class="display-2">Display 2</h1>
+                        <hr>
+                        <h1 class="display-3">Display 3</h1>
+                        <hr>
+                        <h1 class="display-4">Display 4</h1>
+                        <hr>
+                        <h1 class="display-5">Display 5</h1>
+                        <hr>
+                        <h1 class="display-6">Display 6</h1>
+                    </div>
+                </div>
+                <!-- Naming a source -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Naming a source</h6>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere
+                                erat a ante.</p>
+                            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source
+                                    Title</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Unordered list -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h6 class="fw-bold">Unordered List</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <div class="card-body md-text-rg">
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+                                    <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    </li>
+                                    <li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
+                                    <li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</li>
+                                    <li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    </li>
+                                    <li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
+                <!-- Order list -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h6 class="fw-bold">Dismiss</h6>
+                        <h6 class="fw-bold">Order List</h6>
                     </div>
                     <div class="card-body">
-                        <a tabindex="0" class="btn btn-md btn-danger" role="button" data-bs-toggle="popover"
-                            data-bs-trigger="focus" data-bs-title="Dismissible popover"
-                            data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                            popover</a>
+                        <div class="card-body">
+                            <div class="card-body md-text-rg">
+                                <div class="card-body">
+                                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum:</p>
+                                    <ol>
+                                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                        </li>
+                                        <li>tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        </li>
+                                        <li>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</li>
+                                        <li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        </li>
+                                        <li>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                                            non</li>
+                                        <li>proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                        </li>
+                                        <li>consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,6 +594,9 @@
 
     <!-- Js Libraries -->
     <script src="/assets/js/jquery.min.js"></script>
+    <script src="http://prismjs.com/prism.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+    <script src="/assets/js/prism.js"></script>
     <script>
         // Collapse sidebar accordion container components 
         $(function () {
