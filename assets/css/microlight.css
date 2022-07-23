@@ -1161,13 +1161,12 @@ body {
     transition: .5s;
     font-family: var(--body-font);
     background-color: var(--white);
-}
-
-.body-pd {
     background-image: url('../img/background/bg-body-compress.jpg');
     background-size: cover;
     background-position: center;
 }
+
+
 
 /* Link */
 a {
