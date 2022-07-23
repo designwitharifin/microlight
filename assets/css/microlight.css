@@ -1161,6 +1161,9 @@ body {
     transition: .5s;
     font-family: var(--body-font);
     background-color: var(--white);
+}
+
+.body-pd {
     background-image: url('../img/background/bg-body-compress.jpg');
     background-size: cover;
     background-position: center;
@@ -2163,6 +2166,14 @@ blockquote .blockquote-footer {
     box-shadow: var(--shadow-sm);
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Errors
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+section.error__page span {
+    font-size: 128px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Footer
@@ -2238,7 +2249,6 @@ blockquote .blockquote-footer {
     .body-pd {
         padding-left: calc(var(--nav-width) + 188px);
     }
-
 }
 
 
@@ -2251,5 +2261,11 @@ blockquote .blockquote-footer {
         position: absolute;
         box-shadow: var(--shadow-lg);
         margin-left: 56px;
+    }
+
+    /* Errors responsive */
+    section.error__page {
+        padding: 3rem 0;
+        text-align: center;
     }
 }
