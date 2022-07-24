@@ -2054,8 +2054,66 @@ h2.ce-header {
     font-weight: bold;
 }
 
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Validation
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.invalid-feedback {
+    font-size: var(--small-text-medium-font-size);
+}
 
+.valid-tooltip {
+    color: var(--white);
+    border-radius: var(--rounded-2);
+    box-shadow: var(--shadow-lg);
+}
 
+.valid-tooltip::before {
+    content: '\F321';
+    font-family: var(--icon-bootstrap);
+    vertical-align: middle;
+}
+
+.invalid-tooltip {
+    color: var(--white);
+    border-radius: var(--rounded-2);
+    box-shadow: var(--shadow-lg);
+}
+
+.invalid-tooltip::before {
+    content: '\F31D';
+    font-family: var(--icon-bootstrap);
+    vertical-align: middle;
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Account
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+section.profile .card-header img {
+    height: 129px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.px-4 {
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.mt-n10 {
+    margin-top: -4rem !important;
+}
+
+.profil-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.profil-img img {
+    border: 2px dashed var(--secondary-200);
+    padding: 0.5rem;
+}
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination
