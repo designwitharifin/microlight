@@ -76,7 +76,7 @@ function generateMinuteWiseTimeSeries(baseval, count, yrange) {
         i++;
     }
     return series;
-}
+};
 
 function getNewData(baseval, yrange) {
     var newTime = baseval + 300000;
@@ -84,7 +84,7 @@ function getNewData(baseval, yrange) {
         x: newTime,
         y: Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min
     };
-}
+};
 
 var optionsColumn = {
     chart: {
@@ -330,14 +330,6 @@ chartLine.render();
 window.setInterval(function () {
     iteration++;
 
-    chartColumn.updateSeries([
-        {
-            data: [
-                ...chartColumn.w.config.series[0].data,
-                [chartColumn.w.globals.maxX + 300000, getRandom()]
-            ]
-        }
-    ]);
 
     chartLine.updateSeries([
         {
@@ -354,44 +346,4 @@ window.setInterval(function () {
         }
     ]);
 
-    chartCircle.updateSeries([
-        getRangeRandom({ min: 10, max: 100 }),
-        getRangeRandom({ min: 10, max: 100 })
-    ]);
-
-    var p1Data = getRangeRandom({ min: 10, max: 100 });
-    chartProgress1.updateOptions({
-        series: [
-            {
-                data: [p1Data]
-            }
-        ],
-        subtitle: {
-            text: p1Data + "%"
-        }
-    });
-
-    var p2Data = getRangeRandom({ min: 10, max: 100 });
-    chartProgress2.updateOptions({
-        series: [
-            {
-                data: [p2Data]
-            }
-        ],
-        subtitle: {
-            text: p2Data + "%"
-        }
-    });
-
-    var p3Data = getRangeRandom({ min: 10, max: 100 });
-    chartProgress3.updateOptions({
-        series: [
-            {
-                data: [p3Data]
-            }
-        ],
-        subtitle: {
-            text: p3Data + "%"
-        }
-    });
 }, 3000);
