@@ -185,10 +185,10 @@
     --rounded-1: 5px;
     --rounded-2: 10px;
     --rounded-3: 15px;
-    --rounded-5: 20px;
-    --rounded-6: 25px;
-    --rounded-7: 50px;
-
+    --rounded-4: 20px;
+    --rounded-5: 25px;
+    --rounded-6: 30px;
+    --rounded-7: 35px;
     --rounded-100: 100%;
 
     /* --animate-duration: 2s;
@@ -231,6 +231,9 @@
     flex-wrap: wrap;
     margin: 0 -5px;
 }
+
+
+
 
 .colors .color {
     border-radius: var(--rounded-2);
@@ -561,7 +564,7 @@ input[type="range"]:hover {
     box-shadow: var(--shadow-xl);
 }
 
-.shadow-2xl {
+.shadow-xxl {
     box-shadow: var(--shadow2xl);
 }
 
@@ -2038,6 +2041,21 @@ blockquote .blockquote-footer {
     font-size: 80%;
     color: var(--secondary-500);
 }
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Editor
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+.editorjs {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2.ce-header {
+    font-weight: bold;
+}
+
+
+
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination

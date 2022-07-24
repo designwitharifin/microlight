@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microlight &mdash; Popover</title>
+    <title>Microlight &mdash; Text</title>
     <!-- Icon Microlight -->
     <link rel="shortcut icon" href="/assets/img/brand/icon.svg" type="image/x-icon">
     <!-- Custom CSS Files -->
@@ -172,7 +172,7 @@
                     </a>
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link active" id="flush-components" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link" id="flush-components" data-bs-toggle="collapse"
                         data-bs-target="#flushComponents" aria-expanded="false" aria-controls="flushComponents">
                         <i class='bx bx-layer nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Components</span>
@@ -211,7 +211,7 @@
                     <!-- Nav Item - Pages Collapse Menu End -->
 
                     <!-- Nav Item - Pages Collapse Menu Start -->
-                    <a href="#" class="nav__link" id="flush-utilities" data-bs-toggle="collapse"
+                    <a href="#" class="nav__link active" id="flush-utilities" data-bs-toggle="collapse"
                         data-bs-target="#flushUtilities" aria-expanded="false" aria-controls="flushUser">
                         <i class='bx bx-wrench nav__icon bx-tada-hover'></i>
                         <span class="nav__name dropdown-toggle float-end">Utilities</span>
@@ -315,72 +315,39 @@
         <!-- Start content here -->
         <div class="header__page d-flex align-items-left align-items-md-center flex-column flex-md-row pt-5 mb-4">
             <div>
-                <h2 class="fw-bold">Popover Page</h2>
+                <h2 class="fw-bold">Text Page</h2>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb sm-text-rg">
                         <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
-                        <li class="breadcrumb-item">Popover page</li>
+                        <li class="breadcrumb-item">Text page</li>
                     </ol>
                 </nav>
             </div>
         </div>
         <div class="row">
             <div class="col-md-6">
-                <!-- Directions -->
+                <!-- Text Utilities -->
                 <div class="card mb-4">
                     <div class="card-header">
-                        <h6 class="fw-bold">Directions</h6>
+                        <h6 class="fw-bold">Text sizing</h6>
                     </div>
-                    <div class="card-body">
-                        <div class="buttons">
-                            <div class="mb-2">
-                                <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                    Popover on top
-                                </button>
-                                <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                    data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
-                                    Popover on right
-                                </button>
-                            </div>
-                            <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-                                Popover on bottom
-                            </button>
-                            <button type="button" class="btn btn-primary btn-md" data-bs-container="body"
-                                data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
-                                Popover on left
-                            </button>
+                    <div class="row card-body">
+                        <!-- Text size regular -->
+                        <div class="col-md-4">
+                            <p class="sm-text-rg">.sm-text-rg</p>
+                            <p class="md-text-rg">.md-text-rg</p>
+                            <p class="lg-text-rg">.lg-text-rg</p>
+                            <p class="xl-text-rg">.xl-text-rg</p>
+                            <p class="xxl-text-rg">.xxl-text-rg</p>
                         </div>
-                    </div>
-                </div>
-                <!-- Disabled -->
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h6 class="fw-bold">Disabled Popover</h6>
-                    </div>
-                    <div class="card-body">
-                        <div class="buttons">
-                            <div class="mb-2">
-                                <span class="d-inline-block" tabindex="0" data-bs-toggle="popover"
-                                    data-bs-trigger="hover focus" data-bs-content="Disabled popover">
-                                    <button class="btn btn-primary" type="button" disabled>Disabled button</button>
-                                </span>
-                            </div>
+                        <!-- Text size medium -->
+                        <div class="col-md-4">
+                            <p class="sm-text-md">.sm-text-md</p>
+                            <p class="md-text-md">.md-text-md</p>
+                            <p class="lg-text-md">.lg-text-md</p>
+                            <p class="xl-text-md">.xl-text-md</p>
+                            <p class="xxl-text-md">.xxl-text-md</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header">
-                        <h6 class="fw-bold">Dismiss</h6>
-                    </div>
-                    <div class="card-body">
-                        <a tabindex="0" class="btn btn-md btn-danger" role="button" data-bs-toggle="popover"
-                            data-bs-trigger="focus" data-bs-title="Dismissible popover"
-                            data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
-                            popover</a>
                     </div>
                 </div>
             </div>
