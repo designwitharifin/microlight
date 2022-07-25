@@ -2222,6 +2222,43 @@ section.profile .card-header img {
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Settings
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+section.settings .card-body {
+    margin-bottom: -1.5rem !important;
+}
+
+section.settings .card-footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+section.settings .btn-outline-light {
+    border: 1px solid var(--secondary-200);
+    font-size: var(--text-medium-font-size);
+    padding: 5px 8px;
+}
+
+section.settings input {
+    border-radius: 70px !important;
+    border: 1px solid var(--secondary-200) !important;
+    font-size: 22px;
+    font-weight: var(--font-weight-regular);
+}
+
+section.settings .card-body a:hover {
+    color: var(--primary-500) !important;
+    text-decoration: underline;
+}
+
+.form-switch .form-check-input {
+    width: 1.6em;
+    margin-left: auto;
+}
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Pagination
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
@@ -2345,6 +2382,51 @@ section.profile .card-header img {
     font-weight: bold;
     background-color: var(--white);
     box-shadow: var(--shadow-sm);
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Tabs border bottom
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+section.tab .nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+section.tab .nav-borders .nav-link.active {
+    color: var(--primary-700);
+    border-bottom-color: var(--primary-500);
+    font-weight: var(--font-weight-bold);
+}
+
+section.tab .nav-borders .nav-link {
+    color: #69707a;
+    border-bottom-width: 0.125rem;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+section.tab hr:not([size]) {
+    height: 1px;
+}
+
+
+
+section.tab hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: #969696;
+    border: 0;
+    opacity: 0.25;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
