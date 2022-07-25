@@ -2393,6 +2393,7 @@ section.tab .nav {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    font-size: var(--text-medium-font-size);
 }
 
 section.tab .nav-borders .nav-link.active {
@@ -2402,7 +2403,7 @@ section.tab .nav-borders .nav-link.active {
 }
 
 section.tab .nav-borders .nav-link {
-    color: #69707a;
+    color: var(--secondary-500);
     border-bottom-width: 0.125rem;
     border-bottom-style: solid;
     border-bottom-color: transparent;
@@ -2418,8 +2419,6 @@ section.tab .nav-borders .nav-link {
 section.tab hr:not([size]) {
     height: 1px;
 }
-
-
 
 section.tab hr {
     margin: 1rem 0;

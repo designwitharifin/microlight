@@ -132,22 +132,22 @@
             </ul>
             <!-- Profile link -->
             <a href="#" id="dropdownProfile" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-                <img src="/assets/img/avatar/avatar-1.jpg" alt="avatar">
+                <img src="/assets/img/avatar/avatar-2.jpg" alt="avatar">
                 <ul class="dropdown-menu border-0 shadow-lg rounded ps-2 pe-5" aria-labelledby="dropdownProfile">
                     <li>
                         <span class="dropdown-header fw-bold">👋 Hey, Fin</span>
                     </li>
                     <li class="align-middle">
-                        <a class="dropdown-item" href="#"> Profil</a>
+                        <a class="dropdown-item" href="/account/profile.html"> Profil</a>
                     </li>
                     <li class="align-middle">
-                        <a class="dropdown-item" href="#">Activities</a>
+                        <a class="dropdown-item" href="/account/activities.html">Activities</a>
                     </li>
                     <li>
-                        <a class="dropdown-item" href="#"> Setting</a>
+                        <a class="dropdown-item" href="/account/settings.html"> Setting</a>
                     </li>
                     <li>
-                        <a class="dropdown-item text-danger fw-bold" href="#">Logout</a>
+                        <a class="dropdown-item text-danger fw-bold" href="/pages/login.html">Logout</a>
                     </li>
                 </ul>
             </a>
@@ -316,14 +316,19 @@
                 <h2 class="fw-bold">Settings🛠️</h2>
                 <span class="md-text-rg text-secondary-500">Setup and configuration your system here</span>
             </div>
+
+            <div class="ms-md-auto py-2 py-md-0">
+                <button class="btn text-bg-white btn-md me-2 mb-2 text-secondary-500"><i
+                        class="bi bi-plus pe-2 align-middle" style="font-size: 15px;"></i>Custom integration</button>
+            </div>
         </div>
         <!-- Tab view -->
         <section class="tab">
             <nav class="nav nav-borders">
-                <a class="nav-link active ms-0" href="account-profile.html">Profile</a>
-                <a class="nav-link" href="account-billing.html">Billing</a>
-                <a class="nav-link" href="account-security.html">Security</a>
-                <a class="nav-link" href="account-notifications.html">Notifications</a>
+                <a class="nav-link active ms-0" href="#">Configuration</a>
+                <a class="nav-link" href="#">Security</a>
+                <a class="nav-link" href="#">Notifications</a>
+                <a class="nav-link" href="#">API</a>
             </nav>
             <hr class="mt-0 mb-4" />
         </section>
@@ -335,11 +340,11 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <img src="/assets/img/icons/github.svg" alt="icons" style="width: 44px;">
-                                <h6 class="fw-bold align-middle pt-3 ms-2">Github</h6>
+                                <img src="/assets/img/icons/figma.svg" alt="icons" style="width: 44px; height: 44px;">
+                                <h6 class="fw-bold align-middle pt-3 ms-2">Figma</h6>
                             </div>
                             <a href="https://github.com/" class="md-text-rg text-secondary-500"
-                                target="_blank">github.com
+                                target="_blank">figma.com
                                 <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
                             <p class="lg-text-rg text-secondary-700 mt-1">Embed file in preview project and
                                 collaboration</p>
@@ -362,14 +367,41 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <img src="/assets/img/icons/github.svg" alt="icons" style="width: 44px;">
+                                <img src="/assets/img/icons/github.svg" alt="icons" style="width: 44px; height: 44px;">
                                 <h6 class="fw-bold align-middle pt-3 ms-2">Github</h6>
                             </div>
                             <a href="https://github.com/" class="md-text-rg text-secondary-500"
                                 target="_blank">github.com
                                 <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
-                            <p class="lg-text-rg text-secondary-700 mt-1">Embed file in preview project and
-                                collaboration</p>
+                            <p class="lg-text-rg text-secondary-700 mt-1">Link pull requests and automate
+                                workflows and collaboration</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex float-start">
+                                <a href="#" class="btn btn-outline-light btn-sm text-primary-500">View
+                                    integration</a>
+                            </div>
+                            <div class="d-flex float-end">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckDefault">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex mb-2">
+                                <img src="/assets/img/icons/google.svg" alt="icons" style="width: 44px; height: 44px;">
+                                <h6 class="fw-bold align-middle pt-3 ms-2">Google</h6>
+                            </div>
+                            <a href="https://google.com/" class="md-text-rg text-secondary-500"
+                                target="_blank">google.com
+                                <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
+                            <p class="lg-text-rg text-secondary-700 mt-1">Settings SEO friendly your content on
+                                Google</p>
                         </div>
                         <div class="card-footer">
                             <div class="d-flex float-start">
@@ -389,14 +421,68 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="d-flex mb-2">
-                                <img src="/assets/img/icons/github.svg" alt="icons" style="width: 44px;">
-                                <h6 class="fw-bold align-middle pt-3 ms-2">Github</h6>
+                                <img src="/assets/img/icons/google.svg" alt="icons" style="width: 44px; height: 44px;">
+                                <h6 class="fw-bold align-middle pt-3 ms-2">Google</h6>
                             </div>
-                            <a href="https://github.com/" class="md-text-rg text-secondary-500"
-                                target="_blank">github.com
+                            <a href="https://google.com/" class="md-text-rg text-secondary-500"
+                                target="_blank">google.com
                                 <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
-                            <p class="lg-text-rg text-secondary-700 mt-1">Embed file in preview project and
-                                collaboration</p>
+                            <p class="lg-text-rg text-secondary-700 mt-1">Settings SEO friendly your content on
+                                Google</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex float-start">
+                                <a href="#" class="btn btn-outline-light btn-sm text-primary-500">View
+                                    integration</a>
+                            </div>
+                            <div class="d-flex float-end">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex mb-2">
+                                <img src="/assets/img/icons/google.svg" alt="icons" style="width: 44px; height: 44px;">
+                                <h6 class="fw-bold align-middle pt-3 ms-2">Google</h6>
+                            </div>
+                            <a href="https://google.com/" class="md-text-rg text-secondary-500"
+                                target="_blank">google.com
+                                <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
+                            <p class="lg-text-rg text-secondary-700 mt-1">Settings SEO friendly your content on
+                                Google</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex float-start">
+                                <a href="#" class="btn btn-outline-light btn-sm text-primary-500">View
+                                    integration</a>
+                            </div>
+                            <div class="d-flex float-end">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch"
+                                        id="flexSwitchCheckChecked" checked>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="d-flex mb-2">
+                                <img src="/assets/img/icons/google.svg" alt="icons" style="width: 44px; height: 44px;">
+                                <h6 class="fw-bold align-middle pt-3 ms-2">Google</h6>
+                            </div>
+                            <a href="https://google.com/" class="md-text-rg text-secondary-500"
+                                target="_blank">google.com
+                                <i class="bi bi-box-arrow-up-right" style="font-size: 12px;"></i></a>
+                            <p class="lg-text-rg text-secondary-700 mt-1">Settings SEO friendly your content on
+                                Google</p>
                         </div>
                         <div class="card-footer">
                             <div class="d-flex float-start">
