@@ -17,7 +17,7 @@
     <!-- CSS Libraries -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -33,20 +33,45 @@
                             <div class="form-group mb-4">
                                 <input type="email" class="form-control form-control-md" id="validationEmail"
                                     placeholder="Email" required>
-                                <div class="invalid-feedback">
-                                    Please input your email
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input your email
                                 </div>
-                                <div class="valid-feedback">
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
                                     Looks good!
                                 </div>
                             </div>
                             <div class="form-group mb-4">
-                                <input type="password" class="form-control form-control-md" id="validationPassword"
-                                    placeholder="Password" required>
-                                <div class="invalid-feedback">
-                                    Please input your password
+                                <input type="text" class="form-control form-control-md" id="validationEmail"
+                                    placeholder="Username" required>
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input your username
                                 </div>
-                                <div class="valid-feedback">
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="password" class="form-control form-control-md" id="password"
+                                    placeholder="Password" required>
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input your password
+                                </div>
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="form-group mb-4">
+                                <input type="password" class="form-control form-control-md" id="confirmPassword"
+                                    placeholder="Password" required>
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input confirm your
+                                    password
+                                </div>
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
                                     Looks good!
                                 </div>
                             </div>

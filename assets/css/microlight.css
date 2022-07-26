@@ -2151,6 +2151,104 @@ blockquote .blockquote-footer {
 
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* charts custom
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+.content-area {
+    max-width: 1070px;
+    margin: 0 auto;
+}
+
+
+/* .box {
+    max-height: 555px !important;
+} */
+
+
+.box {
+    background-color: var(--blur-light-1-background);
+    backdrop-filter: var(--blur-light-1-backdrop-filter);
+    border-radius: var(--rounded-2);
+    padding: 25px 35px 25px 30px;
+    overflow: hidden;
+}
+
+#monthly-earnings-chart #apexcharts-canvas {
+    position: relative;
+}
+
+#monthly-earnings-chart #apexcharts-canvas:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 58%;
+    top: 0;
+    bottom: 0;
+    background: #24bdd3;
+    opacity: 0.65;
+}
+
+#monthly-earnings-chart #apexcharts-title-text {
+    font-weight: 600;
+}
+
+#monthly-earnings-chart #apexcharts-subtitle-text {
+    font-weight: 700;
+}
+
+.monthly-earnings-text {
+    position: absolute;
+    left: 70px;
+    top: 187px;
+    color: #fff;
+    z-index: 10;
+}
+
+.monthly-earnings-text h6 {
+    font-size: 16px;
+}
+
+.chart-title h5 {
+    font-size: 18px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 38px;
+}
+
+
+@media screen and (max-width:760px) {
+    .monthly-earnings-text {
+        left: 30px;
+    }
+
+    .box {
+        padding: 25px 0;
+    }
+}
+
+.sparkboxes .box {
+    padding: 3px 0 0 0;
+    position: relative;
+}
+
+#spark1,
+#spark2,
+#spark3,
+#spark4 {
+    position: relative;
+    padding-top: 15px;
+}
+
+
+/* overrides */
+.sparkboxes #apexcharts-subtitle-text {
+    fill: #8799a2 !important;
+}
+
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 * Editor
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 .editorjs {
