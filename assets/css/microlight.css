@@ -632,6 +632,7 @@ input[type="range"]:hover {
 
 .btn-outline-light {
     color: var(--secondary-400);
+    border: 1px solid var(--secondary-200);
 }
 
 

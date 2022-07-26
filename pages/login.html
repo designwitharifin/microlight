@@ -17,6 +17,7 @@
     <!-- CSS Libraries -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -33,10 +34,11 @@
                             <div class="form-group mb-4">
                                 <input type="email" class="form-control form-control-md" id="validationEmail"
                                     placeholder="Email" required>
-                                <div class="invalid-feedback">
-                                    Please input your email
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input your email
                                 </div>
-                                <div class="valid-feedback">
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
                                     Looks good!
                                 </div>
                             </div>
@@ -46,10 +48,11 @@
                                         password?</a></label>
                                 <input type="password" class="form-control form-control-md" id="validationPassword"
                                     placeholder="Password" required>
-                                <div class="invalid-feedback">
-                                    Please input your password
+                                <div class="invalid-feedback animate__animated animate__headShake">
+                                    <i class="bi bi-exclamation-circle-fill pe-1 pt-2"></i>Please input your password
                                 </div>
-                                <div class="valid-feedback">
+                                <div class="valid-feedback animate__animated animate__bounceIn">
+                                    <i class="bi bi-check-circle-fill pe-1 pt-2"></i>
                                     Looks good!
                                 </div>
                             </div>
@@ -61,15 +64,13 @@
                                 <span class="md-text-rg text-secondary-800">Login with social media</span>
                             </div>
                             <div class="form-group mb-4">
-                                <button class="w-100 btn btn-outline-light shadow-sm lg-text-md btn-img-auth"
-                                    type="submit">
+                                <button class="w-100 btn btn-outline-light lg-text-md btn-img-auth" type="submit">
                                     <img src="/assets/img/icons/google.svg" alt="icons">
                                     Login with Google
                                 </button>
                             </div>
                             <div class="form-group mb-4">
-                                <button class="w-100 btn btn-outline-light shadow-sm lg-text-md btn-img-auth"
-                                    type="submit">
+                                <button class="w-100 btn btn-outline-light lg-text-md btn-img-auth" type="submit">
                                     <img src="/assets/img/icons/github.svg" alt="icons">
                                     Login with Github
                                 </button>
